@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css linked -->
+    <link rel="stylesheet" href="./css/favourite.css" />
+    <title>Favourite</title>
+  </head>
+  <body>
+    <!--------NavBar---------->
+    <nav>
+      <div class="left"><a href="./index.html">Superhero Hunter</a></div>
+
+      <div class="mid">
+        <a href="./index.html">Home</a>
+        <a href="./favourites.html">Favourites</a>
+      </div>
+    </nav>
+
+    <!-- Page Heading -->
+
+    <div id="title">My Favourite Heroes!</div>
+    <!-- favourite hero----->
+    <div id="superhero-list">
+      <template id="container">
+        <div id="superhero">
+          <!--  info -->
+          <div id="info">
+            <div id="name">Name</div>
+            <div id="id">Id</div>
+            <div id="comics">Comics</div>
+
+            <!-- buttons -->
+            <div id="buttons">
+              <!-- remove from favourites -->
+              <button id="fav">Remove</button>
+              <!-- About Superhero -->
+              <button id="more-info">More Info</button>
+            </div>
+          </div>
+          <br />
+        </div>
+      </template>
+    </div>
+
+    <!-- script for favourite js -->
+    <script src="./js/favourites.js"></script>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Superhero Hunter</title>
+  </head>
+  <body>
+    <!---------NavBar----------->
+    <nav>
+      <div class="left"><a href="./index.html">Superhero Hunter</a></div>
+
+      <div class="mid">
+        <a href="./index.html">Home</a>
+        <a href="./favourites.html">Favourites</a>
+      </div>
+    </nav>
+
+    <!--  form -->
+
+    <form method="get" id="form">
+      <input
+        id="search-character"
+        type="search"
+        placeholder="Search Your Superhero..."
+      />
+    </form>
+
+    <!-- super hero container -->
+    <div id="superhero-list">
+      <template id="container">
+        <div id="superhero">
+          <!--  info -->
+          <div id="info">
+            <div id="name"></div>
+            <div id="id"></div>
+            <div style="font-size: 15px; margin-bottom: 15px">Click Below</div>
+          </div>
+          <!-- buttons -->
+          <div id="buttons">
+            <!-- Add to favourite -->
+            <button id="fav">Add to Favourite</button>
+            <!-- about superhero -->
+            <button id="more-info">More Info</button>
+          </div>
+        </div>
+      </template>
+    </div>
+    <!-- script for index js -->
+    <script src="./js/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <!-- text to hash -->
+    <script>
+      const hash = CryptoJS.MD5("text to hash").toString();
+    </script>
+  </body>
+</html>

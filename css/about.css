@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+body {
+  background: url("../images/54674.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* --------------NavBar-------------- */
+nav {
+  /* border: 2px solid rebeccapurple; */
+  height: 3vmax;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.541);
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100000;
+}
+
+.left {
+  /* border: 2px solid green; */
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left > a {
+  text-decoration: none;
+  color: crimson;
+  font-size: 2vmax;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* border: 1px solid salmon; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mid {
+  /* border: 2px solid rgb(221, 12, 103); */
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  align-self: stretch;
+}
+
+.mid > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.4vmax;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  /* border: 1px solid salmon; */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mid > a:hover {
+  border-bottom: 5px solid crimson;
+}
+
+/* -----form ----*/
+form {
+  margin-top: 10vh;
+  margin-left: 30vw;
+}
+#search-character {
+  font: 100 1.5rem "Lucida Sans";
+  box-sizing: border-box;
+  outline: none;
+  color: rgba(255, 255, 255, 0.741);
+  margin: 4px;
+  padding: 25px;
+  width: 50%;
+  border-radius: 5px;
+  background-color: black;
+}
+
+/* ------superhero container list------ */
+#superhero-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  padding: 2rem;
+  position: relative;
+  top: 20vh;
+}
+
+/*superhero container */
+#superhero {
+  font-family: "Lucida Sans";
+  text-align: center;
+  border-radius: 5px;
+  font-size: x-large;
+  text-align: center;
+  justify-content: center;
+  width: 30%;
+  padding: 20px;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #4148bf;
+  color: white;
+  transition: all 0.5s;
+}
+/* Buttons */
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+#fav {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.821);
+  background-color: rgba(183, 26, 57, 0.697);
+}
+
+#more-info {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.821);
+  background-color: #00ff00b1;
+}
+
+/* ----- About CSS---- */
+
+#heading {
+  background-color: black;
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+  position: relative;
+}
+
+#details {
+  background-color: #768a9e;
+  min-height: 60vh;
+  min-width: 80vw;
+  line-height: 2.5rem;
+  margin: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  height: max-content;
+  padding: 1rem;
+  width: max-content;
+  text-align: justify;
+  position: relative;
+}
+
+#bio,
+#power {
+  color: rgba(0, 0, 0, 0.84);
+  font-size: 1.5rem;
+  padding-left: 20px;
+  width: 50vw;
+}
+
+p {
+  color: #1c1b1b;
+  font-family: "Original Surfer", cursive;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  margin: 0 0 24px;
+  /* text-shadow: 0 0 20px #fff; */
+}
